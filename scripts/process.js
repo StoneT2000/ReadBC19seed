@@ -6,6 +6,7 @@ reader.onloadend = function() {
   bcdata = new Uint8Array(reader.result);
   let myseed = getSeed(bcdata);
   $("#seed").html(myseed);
+  $("#msg").html('(you\'re welcome :D)')
 }
 
 $(document).ready(function () {
